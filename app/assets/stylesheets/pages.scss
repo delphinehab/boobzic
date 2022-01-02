@@ -1,0 +1,19 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.concerts {
+  width: 100px;
+  height: 100px;
+}
+
+.band_picture {
+  width: 400px;
+  height: 200px;
+}
+
+.title_image {
+  background-image: url(cover.jpg), rgba(0, 0, 0, 0.25);
+  width: 1440px;
+  height: 800px;
+  object-fit: cover;
+}
