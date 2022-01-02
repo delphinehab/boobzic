@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  place: MyString
+  date: 2022-01-02
+  photo: MyString
+  to_come: false
+
+two:
+  place: MyString
+  date: 2022-01-02
+  photo: MyString
+  to_come: false
