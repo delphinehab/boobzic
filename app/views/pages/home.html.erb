@@ -1,47 +1,64 @@
-<div>
+<div class="front-page">
   <div class="title">
-    <div class="title_image">
-    <%= image_tag "cover.jpg", alt:"band_picture", class: "big_band_picture" %>
-    </div>
-    <div class="title_boobzic">
+    <div class="title-boobzic">
       <h1>BOOBZIC</h1>
     </div>
-    <div class="motto">
-      <h2>"Boobzic, c’est un peu Eminem et Edith Piaf sur une même scène !”</h2>
+  </div>
+
+  <div class="motto">
+    <h2>"Boobzic, c’est un peu Eminem et Edith Piaf sur une même scène !”</h2>
+  </div>
+
+  <div class="band-description">
+    <div class="container">
+      <div class="subtitle">Le groupe</div>
+      <div class="card1">
+        <%= image_tag "band1.JPG", alt:"boobzic", class: "band_picture" %>
+      </div>
+      <div class="card2">
+         <%= image_tag "band2.jpg", alt:"boobzic", class: "band_picture" %>
+      </div>
+      <div class="card1">
+         <%= image_tag "band3.jpg", alt:"boobzic", class: "band_picture" %>
+      </div>
+      <div class="card2">
+         <%= image_tag "chamaret2.jpg", alt:"boobzic", class: "band_picture" %>
+      </div>
     </div>
   </div>
-  <div class="band_description">
-    <a id=band>Le groupe</a>
-    <div class="card1">
-      <%= image_tag "band1.JPG", alt:"boobzic", class: "band_picture" %>
-    </div>
-    <div class="card2">
-       <%= image_tag "band2.jpg", alt:"boobzic", class: "band_picture" %>
-    </div>
-    <div class="card1">
-       <%= image_tag "band3.jpg", alt:"boobzic", class: "band_picture" %>
-    </div>
-    <div class="card2">
-       <%= image_tag "chamaret2.jpg", alt:"boobzic", class: "band_picture" %>
-    </div>
-  </div>
+
   <div class="concerts">
-    <a id="concerts">Concerts</a>
-    <p>A venir</p>
-    <p>Passés</p>
-    <div class="card_concert"></div>
+    <div class="container custom-container">
+      <div class="subtitle">Concerts</div>
+      <p>A venir</p>
+      <p>Passés</p>
+      <div class="card_concert"></div>
+    </div>
   </div>
+
   <div class="videos">
-    <a id="videos">Vidéos</a>
+    <div class="container custom-container">
+      <div class="subtitle">Vidéos</div>
+    </div>
   </div>
+
   <div class="technical">
-    <a id=technical>Répertoire et fiche technique</a>
+    <div class="container custom-container">
+      <div class="subtitle">Répertoire et fiche technique</div>
+    </div>
   </div>
+
   <div class="medias">
-    <a id="medias">Médias</a>
+    <div class="container custom-container">
+      <div class="subtitle">Médias</div>
+    </div>
   </div>
+
   <div class="contact">
-    <a id="contact">Contact</a>
-    <p>Info & Booking : boobzic@gmail.com</p>
+    <div class="container custom-container">
+      <div class="subtitle">Contact</div>
+      <p>Info & Booking : boobzic@gmail.com</p>
+    </div>
   </div>
+
 </div>

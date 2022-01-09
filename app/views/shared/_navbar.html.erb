@@ -1,15 +1,27 @@
-<div class="navbar navbar-boobzic">
-     <div class="navbar-logo btn">
-      <h1>
-        <%= link_to "B", anchor:"welcome", id: "b-btn" %>
-      </h1>
+<div class="navbar-boobzic navbar-expand-sm">
+  <div class="custom-container container py-2">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="navbar-logo">
+          <%= link_to "B", anchor:"welcome" %>
+       </div>
+          <div class="nav-item">
+            <%= link_to "Acceuil", anchor: "welcome" %>
+          </div>
+          <div class="nav-item">
+            <%= link_to "Le groupe", anchor: "band"%>
+          </div>
+          <div class="nav-item">
+            <%= link_to "Concerts", anchor: "concerts" %>
+          </div>
+          <div class="nav-item">
+            <%= link_to "Médias", anchor: "medias"%>
+          </div>
+          <div class="nav-item">
+            <%= link_to "Répertoire", anchor: "technical"%>
+          </div>
+          <div class="nav-item">
+            <%= link_to "Contact", anchor: "contact"%>
+          </div>
     </div>
-    <div class="navbar-text">
-        <%= link_to "Acceuil", anchor: "welcome", id:"nav-item" %>
-        <%= link_to "Le groupe", anchor: "band", id:"nav-item" %>
-        <%= link_to "Concerts", anchor: "concerts", id:"nav-item" %>
-        <%= link_to "Médias", anchor: "medias", id:"nav-item"%>
-        <%= link_to "Répertoire", anchor: "technical", id:"nav-item"%>
-        <%= link_to "Contact", anchor: "contact", id:"nav-item"%>
-    </div>
+  </div>
 </div>

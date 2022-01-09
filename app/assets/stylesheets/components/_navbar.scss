@@ -1,48 +1,32 @@
 .navbar-boobzic{
-  position: absolute;
-  width: 100%;
-  height: 80px;
-  left: 0px;
-  top: 0px;
   background: $my-red;
-  display: flex;
-  justify-content: space-around;
 }
 
-.btn {
-  height:60px;
-  width: 60px;
-  font-size: 20px;
+.navbar-logo {
+  height:56px;
+  width: 56px;
+  font-size: 32px;
   border-radius: 50%;
   background-color: white;
-  color: $my-red;
-  margin-left:20px;
-}
-
-#b-btn {
-  color: $my-red;
-  font-family: Monoton;
+  text-color: $my-red;
+  margin-left:8px;
+  font-family: $title-font;
+  text-align: center;
   text-decoration: none;
+  padding-top: 6px;
 }
 
-.navbar-text{
-  display: flex;
-  justify-content: space-around;
-  width: 1200px;
-}
-
-#nav-item {
-  font-family: Oswald;
+.nav-item {
+  font-family: $headers-font;
   text-align: center;
   padding: 14px 16px;
   font-size: 20px;
   color: white;
   text-decoration: none;
+    &:hover {
+  text-decoration: underline;
+  }
 }
 
-/* Change the color of links on hover */
-.navbar-boobzic a:hover {
-  text-decoration: underline;
-}
 
 

@@ -2,16 +2,104 @@
   width: 100px;
   height: 100px;
 }
+.title-image {
+}
+
+.big_band_picture {
+  background-size: cover;
+  width: 1760px;
+  height: 100%;
+  box-shadow: inset 0px 4px 4px;
+}
+
+.title-boobzic {
+  width: 640px;
+  height: 240 px;
+  right: 80px;
+  top: 700px;
+  background: $my-red;
+  border-radius: $border-radius;
+  text-align: center;
+  color: white;
+  position: absolute;
+  padding: 72px;
+  box-shadow: 15px 15px 15px rgba(0,0,0,0.2);
+
+  h1{
+    font-family: $title-font;
+    font-size : 80px;
+  }
+}
+
+.front-page {
+  height: 320 px;
+  padding-top: 220px;
+}
+
+.motto {
+  font-family: $headers-font;
+  text-align: center;
+  padding-bottom:80px;
+}
+
+.subtitle{
+  font-family: $headers-font;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.band-description{
+  background-color: $my-red;
+}
+#band {
+  text-align: center;
+}
 
 .band_picture {
   width: 400px;
   height: 200px;
 }
 
-.title_image {
-  background-image: url(cover.jpg), rgba(0, 0, 0, 0.25);
-  width: 1440px;
-  height: 800px;
-  object-fit: cover;
+.concerts{
+  margin-top: 80px;
+  background-color: $my-green;
+  min-height: 400px;
+  width: 100%;
 }
+
+.videos{
+  margin-top: 80px;
+  background-color: $my-red;
+  min-height: 400px;
+  width: 100%;
+}
+
+.technical{
+  margin-top: 80px;
+  background-color: $my-green;
+  min-height: 400px;
+  width: 100%;
+}
+
+.medias{
+  margin-top: 80px;
+  background-color: $my-red;
+  min-height: 400px;
+  width: 100%;
+}
+
+.contact{
+  margin-top: 80px;
+  background-color: $my-green;
+  min-height: 400px;
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 970px;
+    }
+}
+
 // Specific CSS for your home-page

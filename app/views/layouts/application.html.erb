@@ -7,11 +7,16 @@
 
     <%= stylesheet_link_tag 'application', "https://fonts.googleapis.com/css2?family=Monoton&family=Oswald:wght@200;300;400&family=Roboto:wght@100;300&display=swap", media: 'all', 'data-turbolinks-track': 'reload' %>
 
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
+
+    <!-- Bootstrap and fontawesome CSS only-->
+    <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
 
     <meta name= "description" content= "Boobzic est un groupe de musique écletique qui saura ambiancer vos soirées ">
 
@@ -25,11 +30,19 @@
 
   <body>
     <%= render 'shared/navbar' %>
+    <!--
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    <div class="container custom-container">
-      <%= yield %>
+  -->
+    <div class="title_image d-flex">
+      <%= image_tag "cover1.jpg", alt:"band_picture", class: "big_band_picture" %>
     </div>
+
+    <div class="home-background-image" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(cover.jpg)">
+    </div>
+
+      <%= yield %>
+
     <%= render 'shared/footer' %>
   </body>
 </html>
