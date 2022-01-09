@@ -39,13 +39,16 @@
 .motto {
   font-family: $headers-font;
   text-align: center;
-  padding-bottom:80px;
+  padding-bottom:120px;
+  h2{
+    font-size: 40px;
+  }
 }
 
 .subtitle{
   font-family: $headers-font;
   color: white;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 
