@@ -1,0 +1,48 @@
+.navbar-boobzic{
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+  background: $my-red;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  height:60px;
+  width: 60px;
+  font-size: 20px;
+  border-radius: 50%;
+  background-color: white;
+  color: $my-red;
+  margin-left:20px;
+}
+
+#b-btn {
+  color: $my-red;
+  font-family: Monoton;
+  text-decoration: none;
+}
+
+.navbar-text{
+  display: flex;
+  justify-content: space-around;
+  width: 1200px;
+}
+
+#nav-item {
+  font-family: Oswald;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+/* Change the color of links on hover */
+.navbar-boobzic a:hover {
+  text-decoration: underline;
+}
+
+

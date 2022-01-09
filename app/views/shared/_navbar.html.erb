@@ -1,25 +1,15 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-boobzic">
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <%= link_to "Acceuil", anchor: "welcome" %>
-      </li>
-      <li class="nav-item ">
-        <%= link_to "Le groupe", anchor: "band" %>
-      </li>
-      <li class="nav-item ">
-        <%= link_to "Concerts", anchor: "concerts" %>
-      </li>
-      <li class="nav-item ">
-        <%= link_to "Médias", anchor: "medias"%>
-      </li>
-      <li class="nav-item ">
-        <%= link_to "Répertoire", anchor: "technical"%>
-      </li>
-      <li class="nav-item ">
-        <%= link_to "Contact", anchor: "contact"%>
-      </li>
-    </ul>
-  </div>
+<div class="navbar navbar-boobzic">
+     <div class="navbar-logo btn">
+      <h1>
+        <%= link_to "B", anchor:"welcome", id: "b-btn" %>
+      </h1>
+    </div>
+    <div class="navbar-text">
+        <%= link_to "Acceuil", anchor: "welcome", id:"nav-item" %>
+        <%= link_to "Le groupe", anchor: "band", id:"nav-item" %>
+        <%= link_to "Concerts", anchor: "concerts", id:"nav-item" %>
+        <%= link_to "Médias", anchor: "medias", id:"nav-item"%>
+        <%= link_to "Répertoire", anchor: "technical", id:"nav-item"%>
+        <%= link_to "Contact", anchor: "contact", id:"nav-item"%>
+    </div>
 </div>
