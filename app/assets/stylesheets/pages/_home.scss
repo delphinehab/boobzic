@@ -117,8 +117,17 @@
 .videos{
   margin-top: 80px;
   background-color: $my-red;
-  min-height: 400px;
+  min-height: 480px;
   width: 100%;
+}
+#videos{
+  margin-bottom:8px;
+}
+
+.boobzic-video{
+  display:block;
+  width:550px;
+  margin: auto;
 }
 
 .technical{
