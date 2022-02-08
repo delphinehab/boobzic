@@ -10,17 +10,18 @@
   </div>
 
   <div class="band-description">
-    <div class="container">
+    <div class="container item-container">
       <div class="subtitle" id="band">Le groupe</div>
+      <div>Il est <%= Time.now %></div>
 
       <div class="card1">
-        <h2>Une rencontre entre une chanteuse, une accordéoniste, une violiniste, une pianiste et une batteuse.</h2>
+        <h2>Une rencontre entre une chanteuse, une accordéoniste, une violoniste, une pianiste et une batteuse.</h2>
         <%= image_tag "band1.JPG", alt:"boobzic", class: "band_picture" %>
       </div>
 
       <div class="card2">
         <%= image_tag "band2.jpg", alt:"boobzic", class: "band_picture" %>
-        <h2>Un répertoire varié de reprises : jazz, rap, musette, variété française et internationale, rap</h2>
+        <h2>Un répertoire varié de reprises : jazz, rap, musette, variété française et internationale, rap...</h2>
       </div>
 
       <div class="card1">
@@ -37,16 +38,37 @@
   </div>
 
   <div class="concerts">
-    <div class="container custom-container">
+    <div class="container item-container-container">
       <div class="subtitle" id="concerts">Concerts</div>
       <p>A venir</p>
+        <%
+        <<-COMMENT%>
+        <% @concerts.each do|concert|%>
+          <div class="card-body">
+            <h4 class="card-title">
+              <%= concert.date %>
+              <%= image_tag "{concert.name}.png", class: "name" %>
+            </h4>
+            <p>
+              <%= concert.place %>
+            </p>
+          </div>
+        <% end -%>
+        <%
+COMMENT
+%>
+<ol>
+  <% @concerts.each do  |concert|%>
+  <li> <%= concert %> </li>
+  <% end %>
+</ol>
       <p>Passés</p>
       <div class="card_concert"></div>
     </div>
   </div>
 
   <div class="videos">
-    <div class="container custom-container">
+    <div class="container item-container">
       <div class="subtitle" id="videos">Vidéos</div>
       <div class="boobzic-video">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/Q59WXtRLn9g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -55,20 +77,21 @@
   </div>
 
   <div class="technical">
-    <div class="container custom-container">
+    <div class="container item-container">
       <div class="subtitle" id="technical">Répertoire et fiche technique</div>
     </div>
   </div>
 
   <div class="medias">
-    <div class="container custom-container">
+    <div class="container item-container">
       <div class="subtitle" id="medias">Médias</div>
     </div>
   </div>
 
   <div class="contact">
-    <div class="container custom-container">
+    <div class="container item-container">
       <div class="subtitle" id="contact">Contact</div>
+      </form>
       <p>Info & Booking : boobzic@gmail.com</p>
     </div>
   </div>
