@@ -12,8 +12,6 @@
   <div class="band-description">
     <div class="container item-container">
       <div class="subtitle" id="band">Le groupe</div>
-      <div>Il est <%= Time.now %></div>
-
       <div class="card1">
         <h2>Une rencontre entre une chanteuse, une accordéoniste, une violoniste, une pianiste et une batteuse.</h2>
         <%= image_tag "band1.JPG", alt:"boobzic", class: "band_picture" %>
@@ -41,29 +39,11 @@
     <div class="container item-container-container">
       <div class="subtitle" id="concerts">Concerts</div>
       <p>A venir</p>
-        <%
-        <<-COMMENT%>
-        <% @concerts.each do|concert|%>
-          <div class="card-body">
-            <h4 class="card-title">
-              <%= concert.date %>
-              <%= image_tag "{concert.name}.png", class: "name" %>
-            </h4>
-            <p>
-              <%= concert.place %>
-            </p>
-          </div>
-        <% end -%>
-        <%
-COMMENT
-%>
-<ol>
-  <% @concerts.each do  |concert|%>
-  <li> <%= concert %> </li>
-  <% end %>
-</ol>
       <p>Passés</p>
-      <div class="card_concert"></div>
+      <%= @concerts.each do |concert| %>
+        <div class="card_concert">
+        </div>
+      <% end %>
     </div>
   </div>
 

@@ -1,0 +1,11 @@
+<%= form_for @concert do |f| %>
+  <%= f.label :place, "Le lieu de l'événement"%>
+  <%= f.text_field :place %>
+
+  <%= f.label :date, "Le date de l'événement"%>
+  <%= f.date_field :date %>
+
+  <%= f.submit %>
+<% end %>
+
+

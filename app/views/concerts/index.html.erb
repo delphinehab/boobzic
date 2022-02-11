@@ -1,0 +1,11 @@
+<h1>Les concerts</h1>
+
+<%= link_to "Ajoute un nouveau concert", new_concert_path %>
+
+<% @concerts.each do |concert| %>
+<h2><%= concert.place %> </h2>
+<p><%=  concert.date%> </p>
+<%= link_to "Voir", concert_path(concert) %>
+<%= link_to "Supprimer", concert_path(concert), method: :delete  %>
+
+<% end %>
