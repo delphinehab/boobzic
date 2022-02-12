@@ -40,10 +40,16 @@
       <div class="subtitle" id="concerts">Concerts</div>
       <p>A venir</p>
       <p>Passés</p>
-      <%= @concerts.each do |concert| %>
-        <div class="card_concert">
+         <div class="card-concerts">
+            <% @concerts.each do |concert| %>
+              <div class="card-concert-img"></div>
+
+              <div class="card-concert-infos">
+                <h2><%= concert.place %></h2>
+                <p><%= concert.date.strftime("%B %Y")%></p>
+              </div>
+          <% end %>
         </div>
-      <% end %>
     </div>
   </div>
 

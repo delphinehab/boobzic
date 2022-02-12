@@ -4,7 +4,7 @@ class PagesController < ApplicationController
   def contact
   end
   def home
-    @concerts = ['chamaret', 'improvibar', 'letage']
+    @concerts = Concert.all
     #Concert.all
     #if params[:concert]
      # @concerts = @concerts.select { |concert| concert.start_with?(params[:concert]) }
